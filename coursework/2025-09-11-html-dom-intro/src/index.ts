@@ -1,20 +1,26 @@
-const counterButton = document.getElementById(`counterButton`) as HTMLButtonElement;
-const decreaseButton = document.getElementById(`decreaseButton`) as HTMLButtonElement;
+const counterbutton = document.getElementById("counterButton") as HTMLButtonElement;
 const counter = document.getElementById(`counter`) as HTMLParagraphElement;
-
-let clickCount = 0;
-counterButton.addEventListener(`click`, () => {
-    clickCount++;
-    counter.textContent = `${clickCount}`;
-    if (clickCount >= 0) {
-        counter.style.color = `black`;
+const counterdegrease = document.getElementById("count") as HTMLButtonElement;
+const Imgrement = document.getElementById('Imgrement') as HTMLInputElement;
+const select = document.getElementById('ImgrementSelect') as HTMLSelectElement;
+ 
+let clickcounter = 0;
+select.addEventListener('change', () => {
+    Imgrement.value = select.value
+})
+ 
+counterbutton.addEventListener('click', () => {
+    clickcounter += parseInt(Imgrement.value);
+    counter.textContent = `${clickcounter}`
+    if (clickcounter >= 0){
+        counter.style.color = 'black';
     }
-
-});
-decreaseButton.addEventListener(`click`, () => {
-    clickCount--;
-    counter.textContent = `${clickCount}`;
-    if (clickCount < 0) {
-        counter.style.color = `red`;
+})
+counterdegrease.addEventListener('click', () => {
+    clickcounter -= parseInt(Imgrement.value);
+    counter.textContent = `${clickcounter}`
+    if (clickcounter < 0){
+        counter.style.color = 'red';
     }
-});
+})
+ 
