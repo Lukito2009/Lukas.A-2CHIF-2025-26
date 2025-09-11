@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Startercode</title>
-  </head>
-  <body>
+    <style>
+        input, select {
+            padding: 5px;
+            margin-left: 5px;
+        }
+        p#counter {
+            display: inline;
+        }
+    </style>
+
+</head>
+
+<body>
 
     <p>Imgrement how much</p>
     <select name="ImgrementSelect" id="ImgrementSelect">
-      <option value="10">10</option>
-      <option value="100">100</option>
-      <option value="1000">1000</option>
-      </select>
+        <option value="10">10</option>
+        <option value="100">100</option>
+        <option value="1000">1000</option>
+    </select>
 
 
 
-    <input type="number" name="Imgrement" id="Imgrement" 
-    placeholder="Imgrement factor" />
+    <input type="number" name="Imgrement" id="Imgrement" placeholder="Imgrement factor" />
     <hr />
 
     <button id="counterButton">Click to increase</button>
@@ -25,5 +36,6 @@
 
     <button id="count">Click to decrease</button>
     <script src="./src/index.ts" type="module"></script>
-  </body>
+</body>
+
 </html>
