@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+    <p>
+    <h3>Simple Calculator</h3>
+    </p>
+    <p>First Number:
+        <input type="number" name="first" id="first" />
+    </p>
+    <p>Operation:
+
+
+        <select name="OperationSelect" id="OperationSelect">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+    </p>
+    <p>Second Number:
+        <input type="number" name="second" id="second" />
+    </p>
+    <button id="calculate">calculate</button>
+    <p>Result: <span id="resultValue"></span></p>
+
+    <script src="./src/index.ts" type="module"></script>
+
+</body>
+
+</html>
