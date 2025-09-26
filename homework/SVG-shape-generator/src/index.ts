@@ -5,9 +5,9 @@ const add = document.getElementById("add") as HTMLButtonElement;
 let value = "";
 add.addEventListener('click', () => {
     value = select.value
-if (value === 'circle') {
-    const svg = document.getElementById("svg") as unknown as SVGCircleElement;
-    
+    if (value === 'circle') {
+        const svg = document.getElementById("svg") as unknown as SVGCircleElement;
+
 
         const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle') as SVGCircleElement;
 
@@ -19,11 +19,11 @@ if (value === 'circle') {
 
         svg.appendChild(circle);
 
-  
 
-} if (value === 'rect') {
-    const svg = document.getElementById("svg") as unknown as SVGRectElement;
-    
+
+    } if (value === 'rect') {
+        const svg = document.getElementById("svg") as unknown as SVGRectElement;
+
 
         const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect') as SVGRectElement;
 
@@ -38,7 +38,7 @@ if (value === 'circle') {
 
 
 
-}
+    }
 
 
 });

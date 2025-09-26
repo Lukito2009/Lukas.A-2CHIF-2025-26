@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startercode</title>
 </head>
+
 <body>
     <h1 id="helloWorldHeader">Shape Generator</h1>
     <p> <select name="ImgrementSelect" id="ImgrementSelect">
-        <option value="circle">circle</option>
-        <option value="rect">rect</option>
-    </select></p>
-    <p><button id="add">Add Shape</button></p>  
+            <option value="circle">circle</option>
+            <option value="rect">rect</option>
+        </select></p>
+    <p><button id="add">Add Shape</button></p>
     <svg id="svg" width="300" height="300">
 
 
     </svg>
 
-    
+    <input type="string" name="Imgrement" id="Imgrement" placeholder="circle or rect" />
 
     <script src="./src/index.ts" type="module"></script>
 </body>
+
 </html>
