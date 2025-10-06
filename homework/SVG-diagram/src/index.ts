@@ -44,7 +44,7 @@ diagram.addEventListener('click', () => {
       const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
       const x = 5 + 90 * i; // Abstand zwischen Balken
       const height = values[i] * 50; // Höhe skalieren
-      const y = 600 - height; // Von unten zeichnen
+      const y = 600 - 500; // Von unten zeichnen
   
       rect.setAttribute('fill', 'blue');
       rect.setAttribute('x', x.toString());
