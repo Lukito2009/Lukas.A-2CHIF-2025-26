@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#intro {
+  color: red;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+a {
+    color: greenyellow;
+    text-decoration: none;
+    border: 1px solid green;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: black;
+    color: green;
+}
+
+.text.highlight{
+    color: magenta
+}
