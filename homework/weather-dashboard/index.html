@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startercode</title>
+</head>
+<body>
+    <div id="weather-app">
+  <h1>🌤️ Weather Dashboard</h1>
+  
+  <div id="current-weather">
+    <h2>Current Weather in Vienna</h2>
+    <div class="temperature">22°C</div>
+    <div class="condition-sunny">Sunny</div>
+    <p class="details">Humidity: 65% | Wind: 12 km/h</p>
+  </div>
+
+  <div class="alert-warning">
+    <strong>Weather Alert:</strong> High UV index expected today. 
+    Please wear sunscreen if going outside.
+  </div>
+
+  <h2>5-Day Forecast</h2>
+  
+  <div class="forecast-container">
+    <div class="forecast-day sunny">
+      <h3>Monday</h3>
+      <div class="weather-icon">☀️</div>
+      <div class="temp high">25°C</div>
+      <div class="temp low">15°C</div>
+    </div>
+
+    <div class="forecast-day rainy">
+      <h3>Tuesday</h3>
+      <div class="weather-icon">🌧️</div>
+      <div class="temp high">18°C</div>
+      <div class="temp low">12°C</div>
+    </div>
+
+    <div class="forecast-day cloudy">
+      <h3>Wednesday</h3>
+      <div class="weather-icon">☁️</div>
+      <div class="temp high">20°C</div>
+      <div class="temp low">14°C</div>
+    </div>
+
+    <div class="forecast-day partly-cloudy">
+      <h3>Thursday</h3>
+      <div class="weather-icon">⛅</div>
+      <div class="temp high">23°C</div>
+      <div class="temp low">16°C</div>
+    </div>
+
+    <div class="forecast-day stormy">
+      <h3>Friday</h3>
+      <div class="weather-icon">⛈️</div>
+      <div class="temp high">17°C</div>
+      <div class="temp low">11°C</div>
+    </div>
+  </div>
+
+  <h2>Weather Statistics</h2>
+  
+  <div class="stats-container">
+    <div class="stat-card">
+      <div class="stat-label">Average Temperature</div>
+      <div class="stat-value hot">21°C</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-label">Rainfall This Week</div>
+      <div class="stat-value">12mm</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-label">Wind Speed</div>
+      <div class="stat-value">15 km/h</div>
+    </div>
+  </div>
+</div>
+    <script src="./src/index.ts" type="module"></script>
+</body>
+</html>

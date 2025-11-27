@@ -14,8 +14,9 @@ class ConnectFourGame {
     this.createColumnControls();
     this.createBoardCells();
     this.createEmptyBoard();
+    this.getWinner();
   }
-
+  
   private createEmptyBoard(): void {
     for (let row = 0; row < 6; row++) {
       let r: CellState[] = [];
@@ -25,7 +26,7 @@ class ConnectFourGame {
       this.board.push(r);
     }
   }
-
+  
   private createColumnControls(): void {
     for (let column = 0; column < 7; column++) {
       const control = document.createElement('div');
@@ -39,6 +40,7 @@ class ConnectFourGame {
     for (let row = 5; row >= 0; row--) {
       if (this.board[row]![column] === 'empty') {
         return row;
+        
       }
     }
     return -1;
@@ -75,5 +77,19 @@ class ConnectFourGame {
       this.currentPlayer = 'red';
     }
   }
+
+  private getWinner() {
+    for(let i = 0; i <= 6; i++){
+      for(let j = 0; j <= 7; j++){
+        if(this.board[i]![j] === this.currentPlayer){
+          
+
+        }
+      }
+    }
+
+  }
 }
+
 const game = new ConnectFourGame();
+
