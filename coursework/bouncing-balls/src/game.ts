@@ -1,4 +1,4 @@
-import { Ball, GummyBall, SteelBall, ColorBall } from "./ball";
+import { Ball, GummyBall, SteelBall, ColorBall, EggBall } from "./ball";
 
 export class BouncingBallGame {
     private readonly box: HTMLDivElement;
@@ -25,6 +25,11 @@ export class BouncingBallGame {
     public addColorBall(): void {
         const x = this.getRandomX();
         const ball: ColorBall = new ColorBall(this.box, x, 40);
+        this.balls.push(ball);
+    }
+    public addEggBall(): void {
+        const x = this.getRandomX();
+        const ball: EggBall = new EggBall(this.box, x, 40);
         this.balls.push(ball);
     }
     private gameLoop = (): void => {

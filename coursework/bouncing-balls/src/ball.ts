@@ -113,3 +113,7 @@ export class ColorBall extends Ball {
     return true;
   }
 }
+
+export class EggBall extends Ball {
+    
+}
