@@ -1,0 +1,40 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#app-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+#tool-container {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid lightgrey;
+
+  /* Nested CSS */
+  button {
+    border-radius: 4px;
+    background-color: aliceblue;
+    padding: 8px;
+
+    &:hover {
+      background-color: rgb(3, 146, 98);
+      color: #ffffff;
+      border-color: #ffffff;
+    }
+    &.selected {
+        background-color: rgb(3, 146, 98);
+    }
+  }
+}
+#drawing-canvas {
+}
+.widget {
+  border-radius: 9px;
+  box-shadow: 0 4px 8px grey;
+  background-color: antiquewhite;
+}

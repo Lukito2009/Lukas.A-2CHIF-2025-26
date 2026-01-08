@@ -1,4 +1,4 @@
-import './styles.css';
+import './styles.css'
 import { BouncingBallGame } from './game';
 
 const game = new BouncingBallGame('box');
@@ -15,6 +15,5 @@ document.getElementById('addSteel')!.addEventListener('click', () => {
 document.getElementById('addColor')!.addEventListener('click', () => {
   game.addColorBall();
 });
-document.getElementById('addColor')!.addEventListener('click', () => {
-  game.addEggBall();
-});
+
+  

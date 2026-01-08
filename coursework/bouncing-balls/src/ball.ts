@@ -4,7 +4,7 @@ export abstract class Ball {
   protected readonly x: number;
   protected y: number;
   protected size: number;
-  protected color: string;
+  protected color: string;  
   protected velocityY: number;
 
   constructor(box: HTMLDivElement, x: number, size: number, color: string) {
@@ -35,7 +35,7 @@ export abstract class Ball {
 
   public remove(): void {
     this.element.remove();
-  }
+      }
 
   public update(): boolean {
     const gravity = 0.5; // Downward acceleration per frame
@@ -114,6 +114,3 @@ export class ColorBall extends Ball {
   }
 }
 
-export class EggBall extends Ball {
-    
-}
