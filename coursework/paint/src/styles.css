@@ -32,6 +32,27 @@ body {
   }
 }
 #drawing-canvas {
+  Circle {
+    fill: #5177D0;
+    stroke: darkblue
+  }
+  Line {
+    fill: green;
+    stroke: green;
+    
+  }
+  polygon {
+    fill: yellow;
+  }
+  .temp {
+    opacity: 0.5;
+    fill: red;
+  }
+  .selected {
+    stroke: pink;
+    stroke-width: 5px;
+  }
+
 }
 .widget {
   border-radius: 9px;
