@@ -31,7 +31,7 @@ export class ToolSelection {
             this.callback(toolType);
         });
         if(isSelected){
-            button.className = 'selected';
+            button.className = 'selected';  
             this.callback(toolType);
         }
         return button;

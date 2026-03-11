@@ -1,0 +1,71 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #01082a;
+  padding: 8px;
+  font-size: 0;
+}
+
+#übersicht,
+#svg,
+#buttons {
+  width: min(96vw, 900px);
+  margin: 0 auto;
+}
+
+#übersicht {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#svg {
+  display: block;
+  height: auto;
+  margin-top: 12px;
+}
+#buttons {
+  position: relative;
+  height: 72px;
+  margin-top: 12px;
+}
+
+button,
+#plays {
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-size: 40px;
+}
+
+button {
+  border: 0;
+  background: #7fc3d9;
+  color: #0f243a;
+}
+
+#reset {
+  background: #ff5c5c;
+  color: #fff4f4;
+  font-size: 44px;
+}
+#plays {
+  background: #9fb1cb;
+  color: #eef3ff;
+}
+
+#buttons button {
+  position: absolute;
+}
+#buttons [id='1'] {
+  left: 24.075%;
+}
+#buttons [id='2'] {
+  left: 49.075%;
+}
+#buttons [id='3'] {
+  left: 74.075%;
+}
